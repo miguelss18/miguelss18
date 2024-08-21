@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Netflix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: #111;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            position: relative;
+            height: 80vh;
+            background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 60px; /* Ajusta o espaço após a barra de navegação */
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero button {
+            background-color: #e50914;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .hero button:hover {
+            background-color: #f40612;
+        }
+
+        .section {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .movie-list {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+
+        .movie-list::-webkit-scrollbar {
+            display: none; /* Oculta a barra de rolagem horizontal */
+        }
+
+        .movie-list .movie-item {
+            position: relative;
+            margin-right: 10px;
+            width: 150px;
+            height: 225px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .movie-list img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+        }
+
+        footer a {
+            color: #999;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">CloneNet</a>
+        </div>
+        <div class="links">
+            <a href="#">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Minha Lista</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Desfrute dos Melhores Filmes e Séries</h1>
+        <p>Assista a todos os filmes e séries que você ama, sem comerciais.</p>
+        <button>Assista Agora</button>
+        <button>Saiba Mais</button>
+    </header>
+
+    <section class="section">
+        <h2>Em Alta</h2>
+        <div class="movie-list">
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/150x225" alt="Filme 1">
+            </div>
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/150x225" alt="Filme 2">
+            </div>
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/150x225" alt="Filme 3">
+            </div>
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/150x225" alt="Filme 4">
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Novidades</h2>
+        <div class="movie-list">
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/150x225" alt="Filme 5">
+            </div>
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/150x225" alt="Filme 6">
+            </div>
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/150x225" alt="Filme 7">
+            </div>
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/150x225" alt="Filme 8">
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clone Netflix. Todos os direitos reservados.</p>
+        <p>
+            <a href="#">Termos de Serviço</a> | 
+            <a href="#">Privacidade</a> | 
+            <a href="#">Ajuda</a>
+        </p>
+    </footer>
+
+</body>
+</html>
